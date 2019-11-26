@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 5 Partie 1 JS</title>
+  </head>
+  <body>
+    <form>
+      <label for="firstNumber">Premier nombre : </label>
+      <input type="text" id="firstNumber" name="firstNumber" />
+      <label for="secondNumber">Deuxième nombre : </label>
+      <input type="text" id="secondNumber" name="secondNumber" />
+      <button id="submit" name="submit">Valider</button>
+    </form>
+    <script>
+      var validation = document.getElementById('submit');
+      validation.addEventListener('click', f_valid);
+      function f_valid() {
+    // Déclaration des variables
+      var firstNumber = document.getElementById('firstNumber').value;
+      var secondNumber = document.getElementById('secondNumber').value;
+      /* Déclaration d'une variable result qui contient le résultat de la division du nombre1 par le nombre2 */
+      var result = firstNumber / secondNumber;
+      alert(result);
+    }
+    </script>
+  </body>
+</html>
